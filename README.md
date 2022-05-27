@@ -3,13 +3,15 @@ To support the development of FHIR-based electronic Clinical Quality Measures (e
 
 |Repository|Description|Build Site|
 |----|----|----|
-|[draft-measures](https://github.com/cqframework/draft-measures)| |[CI Build](http://build.fhir.org/ig/cqframework/draft-measures)|
-|[ecqm-content-r4](https://github.com/cqframework/ecqm-content-r4)| |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-r4)|
-|[ecqm-content-r4-2021](https://github.com/cqframework/ecqm-content-r4-2021)| |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-r4-2021)|
-|[ecqm-content-r4-2022](https://github.com/cqframework/ecqm-content-r4-2022)| |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-r4-2022)|
-|[ecqm-content-qicore-2020](https://github.com/cqframework/ecqm-content-qicore-2020)| |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2020)|
-|[ecqm-content-qicore-2021](https://github.com/cqframework/ecqm-content-qicore-2021)| |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2021)|
-|[ecqm-content-qicore-2022](https://github.com/cqframework/ecqm-content-qicore-2022)| |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2022)|
+|[draft-measures](https://github.com/cqframework/draft-measures)|This is the first draft measures repository and contains 2019AU and some 2020AU measure content for FHIR DSTU2, STU3, and R4.|[CI Build](http://build.fhir.org/ig/cqframework/draft-measures)|
+|[ecqm-content-r4](https://github.com/cqframework/ecqm-content-r4)|This repository contains 2020AU measure content for FHIR R4.|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-r4)|
+|[ecqm-content-r4-2021](https://github.com/cqframework/ecqm-content-r4-2021)|This repository contains 2021AU content for FHIR R4.|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-r4-2021)|
+|[ecqm-content-r4-2022](https://github.com/cqframework/ecqm-content-r4-2022)|This repository contains 2022AU content for FHIR R4.|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-r4-2022)|
+|[ecqm-content-qicore-2020](https://github.com/cqframework/ecqm-content-qicore-2020)|This repository contains 2020AU content built using the QICore model, as opposed to FHIR directly. |[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2020)|
+|[ecqm-content-qicore-2021](https://github.com/cqframework/ecqm-content-qicore-2021)|This repository contains 2021AU content built using the FHIR model, but with QICoreElements libraries that facilitate accessing extensions defined in QICore.|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2021)|
+|[ecqm-content-qicore-2022](https://github.com/cqframework/ecqm-content-qicore-2022)|This repository contains 2022AU content built using the QICore model, as opposed to FHIR directly.|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2022)|
+
+The measures in these repositories are examples and works in progress and should not be considered final specifications or recommendations for clinical guidance. These examples will help guide and direct the process of finding conventions and usage patterns that meet the needs of the various stakeholders in the measure development community.
 
 All of these repositories are set up as FHIR IGs with auto-build so that commits to the repository will trigger a push to the FHIR build site.
 
