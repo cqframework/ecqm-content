@@ -17,7 +17,17 @@ All of these repositories are set up as FHIR IGs with auto-build so that commits
 
 Note that these are all _draft_ content in various stages of development, and that the newer repositories have more focus.
 
-General documentation for the repository structure and bundling tooling follows.
+## Shared Libraries
+To facilitate reuse of definitions by multiple measures, each repository contains shared libraries, as detailed below:
+
+### FHIRHelpers
+The FHIRHelpers library was initially defined as part of the CQL-to-ELM translator, and is still distributed there, to provide implicit conversions from the FHIR data types to CQL defined types (i.e. FHIR.string to System.String). The current version of the FHIRHelpers library is published as part of the [CQFramework Common IG](http://fhir.org/guides/cqf/common). However, current tooling does not yet have the ability to automatically download the library from this published location, so the FHIRHelpers library is copied to each individual repository with a unique version. Note that this version is also sometimes determined by the version assigned by the MAT.
+
+### MATGlobalCommonFunctions
+
+### FHIRCommon
+
+### QICoreCommon
 
 ## Repository Structure
 Each repository is setup like any HL7 FHIR IG project including the CQL files and test data which means the file structure will be as follows:
