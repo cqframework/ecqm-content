@@ -24,7 +24,7 @@ To facilitate reuse of definitions by multiple measures, each repository contain
 The FHIRHelpers library was initially defined as part of the CQL-to-ELM translator, and is still distributed there, to provide implicit conversions from the FHIR data types to CQL defined types (i.e. FHIR.string to System.String). The current version of the FHIRHelpers library is published as part of the [CQFramework Common IG](http://fhir.org/guides/cqf/common). However, current tooling does not yet have the ability to automatically download the library from this published location, so the FHIRHelpers library is copied to each individual repository with a unique version. Note that this version is also sometimes determined by the version assigned by the MAT. Documentation for the functions in FHIRHelpers is available in the [FHIRHelpers library page](https://build.fhir.org/ig/cqframework/cqf/Library-FHIRHelpers.html) of the CQF Common IG.
 
 ### FHIRCommon
-The FHIRCommon library contains declarations that are common to all use of CQL with FHIR, including decision support rules, quality measures, and case reporting.
+The FHIRCommon library contains declarations that are common to all use of CQL with FHIR, including decision support rules, quality measures, and case reporting. Documentation for the FHIRCommon library is available in the [FHIRCommon library page](https://build.fhir.org/ig/cqframework/cqf/Library-FHIRCommon.html) of the CQF Common IG.
 
 ### QICoreCommon
 The QICoreCommon library contains declarations that are common to all use of CQL with QICore.
