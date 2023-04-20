@@ -10,6 +10,7 @@ To support the development of FHIR-based electronic Clinical Quality Measures (e
 |[ecqm-content-qicore-2020](https://github.com/cqframework/ecqm-content-qicore-2020)|This repository contains 2020AU content built using the QICore model, as opposed to FHIR directly. Measure content in this repository is intended to be able to imported in MADIE, but not MAT-on-FHIR. |Legacy|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2020)|
 |[ecqm-content-qicore-2021](https://github.com/cqframework/ecqm-content-qicore-2021)|This repository contains 2021AU content built using the FHIR model, but with QICoreElements libraries that facilitate accessing extensions defined in QICore. Measure content in this repository is exploratory in nature and is not intended to be able to be imported in MADIE or MAT-on-FHIR, only to support past connectathon usage. All current development efforts should be focused on the qicore-2022 repository. |Legacy|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2021)|
 |[ecqm-content-qicore-2022](https://github.com/cqframework/ecqm-content-qicore-2022)|This repository contains 2022AU content built using the QICore model, as opposed to FHIR directly. Measure content in this repository is intended to be able to imported into the MADIE tool, but not MAT-on-FHIR.|In-Progress|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2022)|
+|[ecqm-content-qicore-2023](https://github.com/cqframework/ecqm-content-qicore-2023)|This repository contains 2023AU content built using the QICore model. Measure content in this repository is intended to be able to be imported into the MADE tool, but not MAT-on-FHIR.|In-Progress|[CI Build](http://build.fhir.org/ig/cqframework/ecqm-content-qicore-2023)|
 
 The measures in these repositories are examples and works in progress and should not be considered final specifications or recommendations for clinical guidance. These examples will help guide and direct the process of finding conventions and usage patterns that meet the needs of the various stakeholders in the measure development community.
 
@@ -24,13 +25,13 @@ To facilitate reuse of definitions by multiple measures, each repository contain
 The FHIRHelpers library was initially defined as part of the CQL-to-ELM translator, and is still distributed there, to provide implicit conversions from the FHIR data types to CQL defined types (i.e. FHIR.string to System.String). The current version of the FHIRHelpers library is published as part of the [CQFramework Common IG](http://fhir.org/guides/cqf/common). However, current tooling does not yet have the ability to automatically download the library from this published location, so the FHIRHelpers library is copied to each individual repository with a unique version. Note that this version is also sometimes determined by the version assigned by the MAT. Documentation for the functions in FHIRHelpers is available in the [FHIRHelpers library page](https://build.fhir.org/ig/cqframework/cqf/Library-FHIRHelpers.html) of the CQF Common IG.
 
 ### FHIRCommon
-The FHIRCommon library contains declarations that are common to all use of CQL with FHIR, including decision support rules, quality measures, and case reporting. Documentation for the FHIRCommon library is available in the [FHIRCommon library page](https://build.fhir.org/ig/cqframework/cqf/Library-FHIRCommon.html) of the CQF Common IG.
+The FHIRCommon library contains declarations that are common to all use of CQL with FHIR, including decision support rules, quality measures, and case reporting. Documentation for the FHIRCommon library is available in the [FHIRCommon library page](https://build.fhir.org/ig/cqframework/cqf/Library-FHIRCommon.html) of the CQF Common IG. Note that this library should NOT be used when using QICore authoring, use QICoreCommon instead.
 
 ### QICoreCommon
 The QICoreCommon library contains declarations that are common to all use of CQL with QICore.
 
-### MATGlobalCommonFunctions
-The MATGlobalCommonFunctions library contains declarations that are commonly used in eCQMs and shared across the logic of multiple measures, such as the `Encounter Inpatient` value set, and the `Inpatient Encounter` population criteria definition. This library also contains functions for calculating hospitalization duration as well as hospital arrival and departure times.
+### CQMCommon (previously MATGlobalCommonFunctions)
+The CQMCommon library contains declarations that are commonly used in eCQMs and shared across the logic of multiple measures, such as the `Encounter Inpatient` value set, and the `Inpatient Encounter` population criteria definition. This library also contains functions for calculating hospitalization duration as well as hospital arrival and departure times.
 
 ## Repository Structure
 Each repository is setup like any HL7 FHIR IG project including the CQL files and test data which means the file structure will be as follows:
