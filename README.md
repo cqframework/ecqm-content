@@ -24,7 +24,11 @@ The measures in these repositories are examples and works in progress and should
 
 All of these repositories are set up as FHIR IGs with auto-build so that commits to the repository will trigger a push to the FHIR build site.
 
-Note that these are all _draft_ content in various stages of development, and that the newer repositories have more focus.
+Note that these are all _draft_ content in various stages of development, and that the newer repositories have more focus. Each repository has a _status_ that indicates:
+
+* Active - The content in the repository is under active development and changes frequently
+* Stable - The content in the repository is considered stable and supporting direct testing. Although fixes will be applied, the content is not under active development and does not change frequently
+* Legacy - The content in the repository is no longer being updated and it provided solely for historical and legacy testing support
 
 ## Shared Libraries
 To facilitate reuse of definitions by multiple measures, each repository contains shared libraries, as detailed below:
